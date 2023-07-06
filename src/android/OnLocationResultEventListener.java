@@ -1,11 +1,10 @@
 package org.apache.cordova.geolocation;
 
-import android.location.Location;
-
-
-import java.util.List;
+import com.google.android.gms.location.LocationResult;
 
 interface OnLocationResultEventListener {
-    void onLocationResultSuccess(LocationContext locationContext, List<Location> locations);
+
+    void onLocationResultSuccess(LocationContext locationContext, LocationResult result);
     void onLocationResultError(LocationContext locationContext, LocationError error);
+
 }
